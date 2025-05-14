@@ -15,21 +15,16 @@ AI Website Builder is a modern web application that uses artificial intelligence
 ## Tech Stack
 
 ### Frontend
+
 - **React 19** - Modern UI library for building interactive interfaces
 - **Tailwind CSS** - Utility-first CSS framework for rapid styling
 - **Vite** - Next generation frontend build tool
 - **React Router** - Declarative routing for React applications
 
-### Backend
-- **FastAPI** - Modern, fast Python web framework
-- **Uvicorn** - ASGI server for Python applications
-- **PyTorch** - Machine learning library
-- **LLaMA 3.1 8B** - Large language model for generating website code
-- **vLLM** - High-throughput and memory-efficient inference engine
-
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v18+)
 - Python 3.9+
 - Git
@@ -40,7 +35,7 @@ AI Website Builder is a modern web application that uses artificial intelligence
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/rj25031/AI-webBuilder/blob/main/readme.md
 cd "AI website builder"
 
 # Install client dependencies
@@ -54,20 +49,24 @@ npm run dev
 #### Server Setup
 
 ```bash
-# Install Python dependencies
-pip install fastapi uvicorn pyngrok transformers torch nest_asyncio pymongo sentence-transformers scikit-learn
+# Install server dependencies
+cd server
+npm install
 
-# Start the server
-python server/main.py
+# Start development server
+
+npm run server
 ```
 
 ## Usage
 
 1. **Enter Business Information**:
+
    - Fill in your business details (name, description, category, etc.)
    - Upload your company logo if available
 
 2. **Enable AI Features**:
+
    - Toggle the AI-Driven Suggestions option
    - Select template category, layout style, and content tone
    - Choose color scheme and typography preferences
@@ -75,6 +74,7 @@ python server/main.py
    - Select which sections to include in your website
 
 3. **Generate Website**:
+
    - Click "Generate AI Preview" to see a preview of your website
    - Make adjustments to your settings as needed
 
@@ -84,3 +84,12 @@ python server/main.py
 
 ## Project Structure
 
+AI website builder/
+├── client/                # React frontend
+│   ├── public/            # Static assets
+│   ├── src/               # Source code
+│   │   ├── components/    # Reusable components
+│   │   ├── pages/         # Page components
+│   │   └── App.jsx        # Main application component
+├── server/                # Backend API
+└── README.md              # This file
